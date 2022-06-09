@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+        'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+        'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.ivu-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ivu-col {
+    box-sizing: border-box;
+    @extend .flex-center;
+}
+
+@media (min-width: 1440px) {
+    .ivu-col-span-lg-4 {
+        display: block;
+        width: 25%;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+    .ivu-col-span-md-3 {
+        display: block;
+        width: 33.33%;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    .ivu-col-span-sm-2 {
+        display: block;
+        width: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .ivu-col-span-xs-1 {
+        display: block;
+        width: 100%;
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    @extend .flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-align-center {
+    @extend .flex;
+    align-items: center;
+}
+
+.flex-justify-center {
+    @extend .flex;
+    justify-content: center;
+}
+
+.flex-col {
+    @extend .flex;
+    flex-direction: column;
+}
